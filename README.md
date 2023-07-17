@@ -36,15 +36,18 @@ Problem-3:
 
 Step-by-step of the code:
 
-1. Create an empty list `series` to store the generated numbers.
-2. Iterate over the range from 1 to `a*2` (exclusive) with a step size of 2, and for each value `i`, convert it to a string and append it to `series`.
-3. Use `', '.join(series)` to join the elements of `series` into a single string with a comma and a space as the separator.
-4. Prompt the user to enter the value of `a` and store it in `input_value`.
-5. Call `generate_series(input_value)` to generate the series of numbers.
-6. Assign the result to `output`.
-7. Print the output with the message "Output:" using `print("Output:", output)`.
+Here's a step-by-step breakdown of the code:
 
-That's it! The code will execute these steps and generate a series of numbers based on the provided value of `a`.
+1. Define a function named `generate_series` that takes an input parameter `a`.
+2. Initialize an empty list named `numbers` to store the generated series.
+3. Use a for loop to iterate over a range of numbers from 1 to `a * 2` (exclusive) with a step size of 2. This ensures that only odd numbers are included in the series.
+4. Inside the loop, append the current number `i` to the `numbers` list.
+5. After the loop, return the `numbers` list.
+6. Prompt the user to enter a value for `a` using the `input` function. The input is converted to an integer using the `int` function and assigned to the variable `a`.
+7. Call the `generate_series` function with the input value `a` and store the returned series of numbers in the variable `series`.
+8. Use the `print` function to display the output. The series of numbers is converted to a comma-separated string using the `join` function and `map` to convert each number to a string. The string is preceded by the label "Output:" for clarity.
+
+This process follows a similar flow for different input values of `a`. The code generates a series of odd numbers up to the given input value `a` and displays it as the output.
 
 
 
