@@ -7,4 +7,4 @@ def generate_series(a):
 # Test the function
 input_value = int(input("Enter the value of 'a': "))
 output = generate_series(input_value)
-print("Output:", output)
+print("Output:", output) 
